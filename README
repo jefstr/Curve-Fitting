@@ -1,0 +1,42 @@
+Curve Fitting
+jpp30@pitt.edu
+20 March 2012
+
+
+INTRODUCTION
+
+This project implements a Lagrange Polynomial and a Cubic Spline for a set of points in the plane. Specifically, given a set of uniformly distributed points (with x-coordinates 0, 1, 2, etc.), the program fits the following curves to them:
+
+The Lagrange Polynomial.
+A Cubic Spline.
+
+The program fits and graphically displays curves for up to a few dozen points (although the Lagrange Polynomial might not look very good due to the high-degree terms).
+
+
+FILES
+
+The following files should be present:
+
+	Lagrange.java - Lagrange class, to do Lagrange interpolation
+	Spline.java - Spline class, to calculate cubic spline
+	Graph.java - Graph class, to graph points
+	Polynomial.java - Polynomial class, to evaluate polynomials
+     	DemonstrateCurveFitting.java - Test file for Lagrange and Spline classes
+
+
+USAGE
+
+Compile in Java 2 SDK 1.6 with:
+
+     javac DemonstrateCurveFitting.java
+
+Run with:
+
+     java DemonstrateCurveFitting
+
+
+KNOWN PROBLEMS
+
+Lagrange interpolation does not work well for more than 15 points due to the high degree terms, but Lagrange Interpolation should really only be used for a small number of points so this is relatively trivial.
+
+
